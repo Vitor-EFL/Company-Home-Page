@@ -108,33 +108,29 @@ footer.mobile-navbar {
 @media only screen and (max-width: 575.98px) {
     footer.mobile-navbar {
         width: 100%;
-        display: block;
+        display: flex;
         position: fixed;
         bottom: 0;
+        justify-content: space-evenly;
+        align-items: center;
         border-top: 2px solid var(--main-color);
     }
 
-    footer ul {
-        display: inline-flex;
-    }
-
-    footer li {
-        padding: 0.25rem 2rem;
+    footer div {
+        width: 16vw;
     }
 
     footer img {
-        width: 12vw;
+        width: 80%;
+        margin: 0 ;
     }
 
-    footer .margin-nav-right {
-        border-right: 2px solid var(--main-color);
+    footer #image3 {
+        border: 0px;
+        
     }
-
-    footer .margin-nav-center {
-        padding-top: 0.7rem;
-    }
-    
 }
+
 
 /* END Mobile NavBar */
 
@@ -166,7 +162,7 @@ footer.mobile-navbar {
 @media only screen and (max-width: 575.98px) {
     .banner {
         background-position: right top;
-        height: 45vh;
+        height: 46vh;
         position: relative;
         top: 46vh;
     }
