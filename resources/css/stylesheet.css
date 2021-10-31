@@ -114,6 +114,7 @@ footer.mobile-navbar {
         justify-content: space-evenly;
         align-items: center;
         border-top: 2px solid var(--main-color);
+        background-color: #fff;
     }
 
     footer div {
@@ -146,6 +147,7 @@ footer.mobile-navbar {
 @media only screen and (max-width: 575.98px) {
     .container {
         width: 100vw;
+        justify-content: center;
     }
 }
 
