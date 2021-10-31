@@ -1,8 +1,5 @@
 /* Styles */
-
-@import url('https://fonts.googleapis.com/css2?family=Average&family=Istok+Web:ital,wght@1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Varela+Round&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Open+Sans:wght@300;400&family=Varela+Round&display=swap');
 :root{
     --main-color: #DB5159;
     --title-color: #A83E44;
@@ -12,10 +9,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    Font-Family: 'Noto Serif', Serif;
+    Font-Family: 'Open Sans', Serif;
     Font-Size: 18px;
 }
-
 
 ol, ul {
 	list-style: none;
@@ -24,19 +20,40 @@ ol, ul {
 a{
     text-decoration: none;
     color: #000;
+    
 }
 
 h1 {
     Font-Family: 'Varela Round', Sans-Serif;
-    Font-Size: 58px;
+    Font-Size: 3rem;
 }
 
 h2 {
     Font-Family: 'Varela Round', Sans-Serif;
-    Font-Size: 48px;
+    Font-Size: 2.5rem;
+}
+
+p {
+    font-family: 'Open Sans', Sans-Serif;
+    font-weight: 300;
+}
+
+.btn {
+    background-color: var(--main-color);
+    width: 10vw;
+    height: 5vh;
+    border-radius: 0.5rem;
+    border: 2px solid var(--main-color);
+    Font-Family: 'Varela Round', Sans-Serif;
 }
 
 /* END Styles */
+
+/* Media Queries */
+
+
+
+/* END Media Queries */
 
 /* NavBar */
 
@@ -45,11 +62,16 @@ header {
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid var(--main-color);
+    height: 3rem;
 }
 
-.logo {
-    padding: 0.5rem 5rem;
-    width: 12.5%;
+header .logo {
+    width: 2.5rem;
+    margin-left: 3rem;
+}
+
+header .logo:hover {
+    cursor: pointer;
 }
 
 nav ul {
@@ -67,47 +89,167 @@ nav a {
    color: var(--main-color);
 }
 
+    /* Small Mobile */
+
+@media only screen and (max-width: 575.98px) {
+    header {
+        display: none;
+    }
+}
+
 /* END NavBar */
+
+/* Mobile NavBar */
+
+footer.mobile-navbar {
+    display: none;
+}
+
+@media only screen and (max-width: 575.98px) {
+    footer.mobile-navbar {
+        width: 100%;
+        display: block;
+        position: fixed;
+        bottom: 0;
+        border-top: 2px solid var(--main-color);
+    }
+
+    footer ul {
+        display: inline-flex;
+    }
+
+    footer li {
+        padding: 0.25rem 2rem;
+    }
+
+    footer img {
+        width: 12vw;
+    }
+
+    footer .margin-nav-right {
+        border-right: 2px solid var(--main-color);
+    }
+
+    footer .margin-nav-center {
+        padding-top: 0.7rem;
+    }
+    
+}
+
+/* END Mobile NavBar */
 
 /* Main */
 
-section {
-    margin: 1.5rem 5rem;
+.container {
+    height: 94.2vh;
+    display: flex;
 }
 
-.container {
-    height: 45rem;
-    display: flex;
+    /* Small Mobile */
+
+@media only screen and (max-width: 575.98px) {
+    .container {
+        width: 100vw;
+    }
 }
 
 .banner {
     background-image: url(/resources/images/banner.jpg);
     height: 100%;
     background-size: cover;
-    background-position: right center;
-    width: 70%;
+    background-position: center center;
+    width: 100%;
+}
+
+    /* Small Mobile */
+
+@media only screen and (max-width: 575.98px) {
+    .banner {
+        background-position: right top;
+        height: 45vh;
+        position: relative;
+        top: 46vh;
+    }
 }
 
 .intro  {
-    width: 60%;
-    position: relative;
+    width: 42%;
+    position: absolute;
     top: 25%;
-    padding-right: 4rem;
-    height: 50%;
+    background-color: rgba(255, 255, 255, 1);
+    margin-left: 4rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    min-width: 20rem;
+}
+
+    /* Small Mobile */
+
+@media only screen and (max-width: 575.98px) {
+    .intro {
+        margin: 0;
+        border-radius: 0;
+        top: 0;
+    }
 }
 
 .intro h1 {
     text-align: center;
     color: var(--main-color);
-    margin-bottom: 1rem;
+    padding: 2rem 0 0.5rem 0;
+    font-size: 4vw;
 }
 
 .intro p {
-    font-size: 2rem;
+    font-size: 1.4vw;
     text-align: justify;
+    padding: 0 4rem 0;
 }
 
+    /* Small Mobile */
 
-
-
+@media only screen and (max-width: 575.98px) {
+    .intro h1 {
+        text-align: center;
+        color: var(--main-color);
+        padding: 0.5rem 0;
+        font-size: 3rem;
+    }
     
+    .intro p {
+        font-size: 0.8rem;
+        text-align: justify;
+        padding: 0 2rem 0;
+    }
+}
+
+.main-btn {
+    align-self: flex-end;
+    margin: 0.8rem 5rem 2rem;
+    color: #fff;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+    font-size: 0.9vw;
+}
+
+.main-btn:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: var(--main-color);
+}
+
+/* Small Mobile */
+
+@media only screen and (max-width: 575.98px) {
+    .main-btn {
+        align-self: center;
+        margin: 1rem;
+        color: #fff;
+        flex-shrink: 0;
+        transition: all 0.3s ease;
+        font-size: 0.9rem;
+        width: 10rem;
+        height: 6vh;
+}
+
