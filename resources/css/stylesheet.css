@@ -1,0 +1,113 @@
+/* Styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Average&family=Istok+Web:ital,wght@1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Varela+Round&display=swap');
+
+:root{
+    --main-color: #DB5159;
+    --title-color: #A83E44;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    Font-Family: 'Noto Serif', Serif;
+    Font-Size: 18px;
+}
+
+
+ol, ul {
+	list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+h1 {
+    Font-Family: 'Varela Round', Sans-Serif;
+    Font-Size: 58px;
+}
+
+h2 {
+    Font-Family: 'Varela Round', Sans-Serif;
+    Font-Size: 48px;
+}
+
+/* END Styles */
+
+/* NavBar */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--main-color);
+}
+
+.logo {
+    padding: 0.5rem 5rem;
+    width: 12.5%;
+}
+
+nav ul {
+    display: inline-flex;
+    padding-right: 5rem;
+}
+
+nav li {
+    margin-left: 3rem;
+}
+
+nav a {
+    font-family: 'Varela Round', Sans-Serif;
+   font-size: 1rem;
+   color: var(--main-color);
+}
+
+/* END NavBar */
+
+/* Main */
+
+section {
+    margin: 1.5rem 5rem;
+}
+
+.container {
+    height: 45rem;
+    display: flex;
+}
+
+.banner {
+    background-image: url(/resources/images/banner.jpg);
+    height: 100%;
+    background-size: cover;
+    background-position: right center;
+    width: 70%;
+}
+
+.intro  {
+    width: 60%;
+    position: relative;
+    top: 25%;
+    padding-right: 4rem;
+    height: 50%;
+}
+
+.intro h1 {
+    text-align: center;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+
+.intro p {
+    font-size: 2rem;
+    text-align: justify;
+}
+
+
+
+
+    
