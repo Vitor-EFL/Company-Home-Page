@@ -154,7 +154,7 @@ footer.mobile-navbar {
 }
 
 .banner {
-    background-image: url(/resources/images/banner.jpg);
+    background-image: url(../images/banner.jpg);
     height: 100%;
     background-size: cover;
     background-position: center center;
