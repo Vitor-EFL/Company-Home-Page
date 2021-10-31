@@ -181,6 +181,7 @@ footer.mobile-navbar {
         width: 100;
         height: 100vh;
         justify-content: center;
+        width: 100vw;
     }
 }
 
@@ -215,7 +216,6 @@ footer.mobile-navbar {
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
-    min-width: 30rem;
 }
 
     /* Small Mobile */
@@ -227,6 +227,7 @@ footer.mobile-navbar {
         top: 0;
         background-color: transparent;
         margin-top: 10%;
+        width: 100%;
     }
 }
 
@@ -310,6 +311,16 @@ article .img-container {
     background-size: cover;
     background-position: center center;
     min-width: 300px;
+}
+
+/* Small Mobile */
+
+@media only screen and (max-width: 575.98px){
+
+    article .img-container{
+        min-width: 100vw;
+        margin: 1rem 0;
+    }
 }
 
 
