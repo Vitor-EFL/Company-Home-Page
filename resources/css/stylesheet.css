@@ -178,7 +178,7 @@ footer.mobile-navbar {
 
 @media only screen and (max-width: 575.98px) {
     .container {
-        width: 100;
+        width: 100vw;
         height: 100vh;
         justify-content: center;
         width: 100vw;
@@ -302,6 +302,7 @@ article.container {
     flex-wrap: wrap;
     flex-basis: 100px;
     min-height: 100vh;
+    flex-direction: row-reverse;
 }
 
 article .img-container {
@@ -316,6 +317,7 @@ article .img-container {
 /* Small Mobile */
 
 @media only screen and (max-width: 575.98px){
+
 
     article .img-container{
         min-width: 100vw;
@@ -366,6 +368,16 @@ article .text-container {
     color: var(--main-color);
     background-color: #fff;
     cursor: pointer;
+}
+
+    /* Small Mobile */
+
+@media only screen and (max-width: 575.98px) {
+    
+    .dog-btn {
+        color: #fff;
+        min-width: 10rem;
+    }
 }
 
 /* END Dogs Article */
